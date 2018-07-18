@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <index-header></index-header>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import IndexHeader from "../src/components/header/header";
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    IndexHeader
+  }
+};
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 50px;
 }
 </style>
