@@ -29,7 +29,7 @@
                             <Icon type="arrow-down-b"></Icon>
                         </a>
                         <DropdownMenu slot="list">
-                            <DropdownItem>Profile</DropdownItem>
+                            <DropdownItem>UserName</DropdownItem>
                             <DropdownItem>Signout</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
@@ -208,7 +208,7 @@ export default {
     background: #ffffff;
     background-color: #e7e7e7;
 }
-
+// pc端
 @media (min-width: 768px) {
     .hide-mobile {
         display: none;
@@ -219,6 +219,7 @@ export default {
     }
 }
 
+// 移动端
 @media (max-width: 768px) {
     .pc {
         display: none;

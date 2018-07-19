@@ -7,11 +7,13 @@
             </div>
         </div>
         <div class="bg2" :style="bgImg2">
+            <home-signin></home-signin>
         </div>
     </div>
 </template>
 
 <script>
+import HomeSignin from "./signin";
 export default {
   name: "Home",
   props: {
@@ -30,6 +32,9 @@ export default {
         backgroundSize: "cover"
       }
     };
+  },
+  components: {
+    HomeSignin
   }
 };
 </script>
